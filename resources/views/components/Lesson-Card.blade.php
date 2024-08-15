@@ -11,8 +11,8 @@
     <div id="panelsStayOpen-collapse-{{ $index }}" class="accordion-collapse collapse show"
         aria-labelledby="panelsStayOpen-heading-{{ $index }}">
         <div class="accordion-body">
-            <p><strong>ملقحات الدرس</strong> <a href="/{{ $lesson['pdf'] }}">اضغط هنا</a></p>
-            <p><strong>رابط الزوم</strong> <a href="{{ $lesson['zoom_link'] }}">{{ $lesson['zoom_link'] }}</a>
+            <p><strong>Attachment</strong> <a href="/{{ $lesson['pdf'] }}">Click Here</a></p>
+            <p><strong>Live Lesson Link</strong> <a href="{{ $lesson['zoom_link'] }}">{{ $lesson['zoom_link'] }}</a>
             </p>
             <div class="accordion mt-3 nested-accordion" id="nestedAccordion-{{ $index }}">
                 <div class="accordion-item">
@@ -20,7 +20,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#nested-collapse-{{ $index }}" aria-expanded="false"
                             aria-controls="nested-collapse-{{ $index }}">
-                            الدرس المسجل
+                            Recorded Video
                         </button>
                     </h2>
                     <div id="nested-collapse-{{ $index }}" class="accordion-collapse collapse"

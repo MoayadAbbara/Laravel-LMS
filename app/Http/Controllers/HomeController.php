@@ -27,6 +27,8 @@ class HomeController extends Controller
             return redirect()->route('student.courses');
         } elseif ($role == Role::TEACHER) {
             return redirect()->route('teacher.courses');
+        } elseif ($role == Role::ADMIN) {
+            return redirect()->route('admin.courses');
         }
     }
 

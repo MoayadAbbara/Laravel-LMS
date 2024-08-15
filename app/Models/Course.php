@@ -13,7 +13,7 @@ class Course extends Model
 
     public function teacher()
     {
-        return $this->belongsTo(User::class, 'teacher_id')->where('role_id', 2);
+        return $this->belongsTo(User::class, 'teacher_id')->where('role_id', Role::TEACHER);
     }
 
     public function grade()

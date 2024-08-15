@@ -35,7 +35,10 @@ Route::prefix('student')->middleware([Authenticate::class, RoleCheck::class . ':
 Route::prefix('teacher')->middleware([Authenticate::class, RoleCheck::class . ':' . Role::TEACHER])->name('teacher.')->group(function () {
     Route::get('courses', [\App\Http\Controllers\Teacher\CourseController::class, 'index'])->name('courses');
     Route::get('courses/{course}', [\App\Http\Controllers\Teacher\CourseController::class, 'view'])->name('courses.view');
+});
 
+Route::prefix('web/admin')->middleware([Authenticate::class, RoleCheck::class . ':' . Role::ADMIN])->name('admin.')->group(function () {
+    Route::get('courses', [\App\Http\Controllers\Admin\CourseController::class, 'index'])->name('courses');
 });
 
 

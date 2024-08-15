@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<x-Banner Title="البرنامج الاسبوعي" ImagePath="{{asset('img/carousel-1.jpg')}}"></x-Banner>
+<x-Banner Title="Weekly Program" ImagePath="{{asset('img/carousel-1.jpg')}}"></x-Banner>
 
 
 

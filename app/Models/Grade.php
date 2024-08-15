@@ -18,6 +18,6 @@ class Grade extends Model
 
     public function student()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(User::class)->where('role_id', Role::STUDENT);
     }
 }

@@ -59,7 +59,7 @@
                 <a href="{{ route('course') }}"
                     class="nav-item nav-link {{ request()->is('teacher/course*') || request()->is('student/course*') ? 'active' : '' }}">Courses</a>
 
-                @if(Auth::check() && Auth::user()->id == 1)
+                @if(Auth::check() && Auth::user()->role_id == 1)
                 <a href="{{route('student.program')}}"
                     class="nav-item nav-link {{request()->is('student/Program') ? 'active' : '' }}">Program</a>
                 @endif
@@ -156,13 +156,13 @@
         <div class="container">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    {{-- <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
                         Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
+                    </div> --}}
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Home</a>
