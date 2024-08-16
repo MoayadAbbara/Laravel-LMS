@@ -2,7 +2,7 @@
 @section('content')
 
 
-<x-Banner Title="Dersler" ImagePath="{{asset('img/carousel-1.jpg')}}"></x-Banner>
+<x-Banner Title="Courses" ImagePath="{{asset('img/carousel-1.jpg')}}"></x-Banner>
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
